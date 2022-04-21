@@ -1,64 +1,63 @@
 # Botstrology
 
-:ringed_planet: Телеграм-бот, присылающий гороскоп на день по запросу: в ответ на выбор знака зодиака генерирует прогноз путем комбинации четырех кусков предложений :ringed_planet:
+:ringed_planet: Telegram bot that sends the horoscope for the day on request: it generates a forecast by combining four pieces of sentences. :ringed_planet:
 
-## Технологии
+## Technologies
 - Python
 - pytelegrambotapi
 
-## Описание работы
-Бот запускается командой **/start**, затем предлагает гороскоп на сегодня, для этого ему нужно написать **давай**. В ответ бот предоставляет кнопки со знаками зодиака на выбор, после нажатия *любой* из кнопок, радомно генерирует комбинацию фраз и присылает ее в чат.
+## Description
+You start the bot with the **/start** command, the bot asks you whether you want today's horoscope, you should send **давай**, and choose your zodiac sign from the selection. The bot will then generate a random forecast and send it to you.
 
-## Переменные окружения
-В **horoscope_generator/handlers.py** используется переменная **TOKEN** - это токен бота, его можно получить сразу после регистрации вашего бота у @BotFather. Хранить желательно отдельно от кода.
+## Environment variables
+The **horoscope_generator/handlers.py** uses the **TOKEN** variable - this is your bot's token, you can get it from the @BotFather bot right after your bot's registration. Keep it in a separate location.
+## Bot's deployment
 
-## Запуск бота
+To deploy your own horoscope bot:
+1. Clone the repository
+2. Create a virtual environment in your project's directory
+3. Run the virtual environment and install the requirements
+4. Create an .env file in the horoscope_generator directory
+5. Register a new Telegram bot using [@BotFather](https://t.me/BotFather)
+6. Save your bot's token to the .env file
+7. Run the bot
 
-Для запуска своего астро-бота, вам необходимо:
-1. Клонировать репозиторий
-2. Создать виртуальное окружение в папке с проектом
-3. Запустить окружение и установить зависимости
-4. Создать файл .env в директории horoscope_generator
-5. Зарегистрировать нового телеграм бота с помощью [@BotFather](https://t.me/BotFather)
-6. Сохранить токен вашего бота в .env
-7. Запустить бота
-
-### Клонирование репозитория
-Запустите следующую команду в bash
+### Clone the repository
+Run the following script in bash
 ```sh
 git clone https://github.com/AnnaBaziruwiha/good_morning_bot.git
 ```
 
-### Создание виртуального окружения
-Перейдите в директорию проекта **good_morning_bot**, и запустите команду
+### Create virtual environment
+Move to the project's directory **good_morning_bot**, and run the script
 ```sh
 python3 -m venv venv
 ```
 
-### Запуск виртуального окружения и установка зависимостей
-Запустите виртуальное окружение
+### Run the virtual environment and install the requirements
+Run the virtual environment
 ```sh
 source ./venv/scripts/activate # для windows
 source ./venv/bin/activate # для linux
 ```
 
-Установите необходимые зависимости
+Install the requirements
 ```sh
 (venv)
 pip install -r requirements.txt
 ```
 
-### Запуск бота
-Находясь в директории проекта, запустите его командой
+### Run the bot
+Run the following script in the project's directory
 ```sh
 python3 main.py
 ```
 
-Бот, запущенный таким образом, будет работать только пока включен компьютер и эта программа запущена. Если вам нужно, чтобы он работал постоянно, то можно запустить его на удаленном сервере.
+If you delploy your bot like that, it will only work while your computer is on and this script is running. If you need it to always be running, you can deploy it on a server.
 
-### Контакты
-Еще больше моих проектов ищите [тут](https://github.com/AnnaBaziruwiha)
+### Contacts
+Check out more of my projects [here](https://github.com/AnnaBaziruwiha)
 
-Предложения и пожелания пишите мне [в телеграм](https://t.me/a_bzrwh)
+You can send requests and suggestions [to this address](https://t.me/a_bzrwh)
 
-Мой [linkedin](https://www.linkedin.com/in/annabaziruwiha/)
+My [linkedin](https://www.linkedin.com/in/annabaziruwiha/)
